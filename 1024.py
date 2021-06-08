@@ -20,13 +20,13 @@ class Autoreply:
         'Proxy-Connection': 'keep-alive',
         'Referer': 'http://t66y.com/index.php',
         'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
     }
     headers1={
         'Host': 't66y.com',
         'Proxy-Connection': 'keep-alive',
         'Referer': 'http://t66y.com/login.php',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
     }
 
     def __init__(self,user,password,secret):
@@ -182,8 +182,8 @@ class Autoreply:
     @staticmethod
     def getreply():
         #自定义回复内容，记得修改随机数
-        reply=['感谢分享','感谢你的分享','谢谢分享','多谢分享','感谢作者的分享','谢谢坛友分享','内容精彩','的确如此','感谢分享','涨知识了','很有意思']
-        reply_m=random.randint(0,10)
+        reply=['感谢分享了','感谢你的分享','谢谢分享','多谢分享','感谢楼主分享','谢谢坛友分享','精彩 感谢分享','活到老学到老','感谢分享','涨姿势了','内容挺不错','真不错啊','太精彩了','回帖支持 感谢分享''楼主辛苦了 感谢分享']
+        reply_m=random.randint(0,15)
         reply_news=reply[reply_m]
         print('本次回复消息是:'+reply_news)
         reply_news=reply_news.encode('gb18030')
