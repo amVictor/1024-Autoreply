@@ -262,7 +262,7 @@ class Autoreply:
         m=Autoreply.getnumber(cookies)
         suc=False
         print('第'+str(ge+1)+'个账号开始时发表帖子:'+m)
-        while n<10 and suc is False:
+        while n<20 and suc is False:
             try:
                 au=''
                 print('第'+str(ge+1)+'个账号当前在回复第'+str(n+1)+'个。')
@@ -279,7 +279,7 @@ class Autoreply:
                     sleep(sleeptime)
                     print('第'+str(ge+1)+'个账号休眠完成')
                 elif au=='今日已达上限':
-                    print('第'+str(ge+1)+'个账号回复失败，今日次数已达10次')
+                    print('第'+str(ge+1)+'个账号回复失败，今日次数已达20次')
                     suc=True
                 else:
                     print('第'+str(ge+1)+'个账号1024限制或者被禁言！！！')
