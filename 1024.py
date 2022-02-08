@@ -183,7 +183,7 @@ class Autoreply:
     def getreply():
         #自定义回复内容，记得修改随机数
         reply=['感谢分享了','感谢你的分享','谢谢分享','多谢分享','感谢楼主分享','谢谢坛友分享','精彩 感谢分享','活到老学到老','感谢分享','涨姿势了','内容挺不错','真不错啊','太精彩了','回帖支持 感谢分享''楼主辛苦了 感谢分享']
-        reply_m=random.randint(0,15)
+        reply_m=random.randint(0,len(reply)-1)
         reply_news=reply[reply_m]
         print('本次回复消息是:'+reply_news)
         return  reply_news
